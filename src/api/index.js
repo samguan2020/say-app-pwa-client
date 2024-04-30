@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-// const API = axios.create({ baseURL: 'https://say-app-pwa-server-3da24f22cc4a.herokuapp.com/' });
-// const socket = new WebSocket('wss://say-app-pwa-server-3da24f22cc4a.herokuapp.com');
-const API = axios.create({ baseURL: 'http://localhost:5000' }); // this is to use local BE
-const socket = new WebSocket('ws://localhost:5000');
+const API = axios.create({ baseURL: 'https://say-app-pwa-server-3da24f22cc4a.herokuapp.com/' });
+const socket = new WebSocket('wss://say-app-pwa-server-3da24f22cc4a.herokuapp.com');
+// const API = axios.create({ baseURL: 'http://localhost:5000' }); // this is to use local BE
+// const socket = new WebSocket('ws://localhost:5000');
 
 // Event listener for when the WebSocket connection is established
 socket.addEventListener('open', () => {
